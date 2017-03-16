@@ -1,0 +1,5 @@
+{
+  name : "yvr",
+  version : "1.0.0",
+  base : "com.shawn.yvr"
+}

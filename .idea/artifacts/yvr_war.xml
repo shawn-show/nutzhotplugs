@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="yvr:war">
+    <output-path>$PROJECT_DIR$/yvr/target</output-path>
+    <root id="archive" name="yvr.war">
+      <element id="artifact" artifact-name="yvr:war exploded" />
+    </root>
+  </artifact>
+</component>

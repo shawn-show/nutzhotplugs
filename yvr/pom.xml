@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>parent</artifactId>
+        <groupId>shawn_xiao</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>yvr</artifactId>
+    <packaging>war</packaging>
+    <name>yvr Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <version>1.0.0</version>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.nutz/nutz-plugins-hotplug -->
+        <dependency>
+            <groupId>org.nutz</groupId>
+            <artifactId>nutz-plugins-hotplug</artifactId>
+            <version>1.r.60.r3</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>cn.outofmemory.MainClass</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>yvr</finalName>
+    </build>
+</project>
